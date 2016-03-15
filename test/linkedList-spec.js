@@ -294,7 +294,9 @@ describe('Linked List Generator', function() {
     describe('takes two arguments, a `value` and an `index`', function () {
       it('should add a new node at a given index', function () {
         // insert into second position of list
+        console.log('before', urlList);
         urlList.insert('mozilla.org', 1);
+        console.log('after', urlList);
         expect(urlList.get(0).value).to.be.equal('news.ycombinator.com');
         expect(urlList.get(1).value).to.be.equal('mozilla.org');
         expect(urlList.get(2).value).to.be.equal('icann.org');
